@@ -1,0 +1,32 @@
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+lint:
+  image: node:20
+  stage: lint
+  script:
+    - npm install
+    - npm run lint
+
+test:
+  image: node:20
+  stage: test
+  script:
+    - npm install
+    - npm test
+
+build:
+  image: node:20
+  stage: build
+  script:
+    - npm install
+    - npm run build || echo "No build script defined"
+
+# Add your deployment job below
+# deploy:
+#   stage: deploy
+#   script:
+#     - echo "Deploy step here"

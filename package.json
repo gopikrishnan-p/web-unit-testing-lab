@@ -1,0 +1,17 @@
+{
+  "name": "devops-copilot-nodejs-ci-cd",
+  "version": "1.0.0",
+  "description": "Node.js project scaffolded for modern CI/CD with GitHub Actions, GitLab CI, Copilot, and best practices.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "lint": "eslint src/"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  }
+}
